@@ -9,7 +9,7 @@ class MobileShop{
 
     listAllMobiles(){
         this.mobiles.forEach((mb , index)=>{
-            console.log(`${index+1}) ${mb.brand} - ${mb.model}- ${mb.color} IMEMI${mb.imemi}`);
+            console.log(`${index+1}) ${mb.brand} - ${mb.model}- ${mb.color} IMEI${mb.imei}`);
         })
     }
 }
@@ -17,14 +17,14 @@ class MobileShop{
 class Mobile{
     constructor(brand, model, price,color){
         this.brand = brand;
-        this.imemi = Math.floor(Math.random()*100000);
+        this.imei = Math.floor(Math.random()*100000);
         this.model = model;
         this.price = price;
         this.color = color;
     }
 
     getMobileInfo(){
-        console.log(`${this.brand} -  ${this.model} = ${this.price}-${this.color} IMEMI${this.imemi}`);
+        console.log(`${this.brand} -  ${this.model} = ${this.price}-${this.color} IMEI${this.imei}`);
     }
 }
 
